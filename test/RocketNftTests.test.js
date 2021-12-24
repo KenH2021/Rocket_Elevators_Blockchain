@@ -25,39 +25,33 @@ contract("RocketElevator", accounts => {
             const maxMintAmount = await contract.maxMintAmount()
             assert.equal(maxMintAmount, 10)
         })
-        it("has the right symbol", async() => {
+        it("has a symbol", async() => {
             const symbol = await contract.symbol()
             assert.equal(symbol, "RE")
-        })
+        });
         it("has the correct URI for unrevealed NFT's", async() => {
             const notRevealedUri = await contract.notRevealedUri()
             assert.equal(notRevealedUri, "ipfs://QmT9xyRGWN1vXCNtr7neivyMR8KrFnzxt91kC5s9tiws3M/hidden.json")
         })
-        it("is not revealed yet (should fail after the 27th of dec 2021 at 1pm)", async() => {
-            const revealed = await contract.revealed()
-            assert.equal(revealed, false)
+        describe('Sales end date', async() => {
+            it('exists', async() => {
+                const endDate = await contract.salesEndDates()
+                assert.ok(endDate)
+            })
+            it('set to the right date', async() => {
+                const endDate = await contract.salesEndDates()
+                assert.equal(endDate, 1641218400)
+            })
+        });
+        describe('collection', async () => {
+            it('is not revealed', async() => {
+                const revealed = await contract.revealed()
+                assert.equal(revealed, false)
+            })
+            it('sale is paused', async() => {
+                const paused = await contract.paused()
+                assert.equal(paused, true)
+            })
         })
     })
-
-    // describe('minting', async () => {
-    //     it('creates a new token', async () => {
-    //       const result = await contract.mint(1);
-    //     //   const totalSupply = await contract.totalSupply();
-    
-    //     //   // SUCCESS
-    //     //   const event = result.logs[0].args;
-    //     //   assert.equal(totalSupply, 1, 'supply is OK');
-    //     //   assert.equal(event.tokenId.toNumber(), totalSupply - 1, 'token id is OK');
-    //     //   assert.equal(
-    //     //     event.from,
-    //     //     '0x0000000000000000000000000000000000000000',
-    //     //     'from address is OK'
-    //     //   );
-    //     //   assert.equal(event.to, accounts[0], 'to address is OK');
-    
-    //     //   // FAILURE : cannot mint same color twice
-    //     //   await contract.mint('#dc143c').should.be.rejected;
-    //     });
-    //   });
-
 })
