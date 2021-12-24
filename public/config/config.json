@@ -1,0 +1,21 @@
+{
+  "CONTRACT_ADDRESS": "0x2b86b244562cB75Aff17d3f580132Ec9565cd89c",
+  "ROCKET_TOKEN_ADDRESS": "0x3b8F02Aa259f1c55fC2afaFF9cC3695074Ff80EB",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x31AD9Ec8e39b301BE801F9EC5921D8CDFEEBAf91",
+  "ERC_CONTRACT_ADDRESS": "0x3b8F02Aa259f1c55fC2afaFF9cC3695074Ff80EB",
+  
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "Rinkeby TestETH",
+    "ID": 4
+  },
+  "NFT_NAME": "RocketElevator",
+  "SYMBOL": "RE",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 3000000,
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/rocketelevator-v2",
+  "SHOW_BACKGROUND": true
+}

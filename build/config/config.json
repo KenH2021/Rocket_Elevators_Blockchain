@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0x803D8dE73028d6b2605FA748a805eE22BECBafEc",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x803D8dE73028d6b2605FA748a805eE22BECBafEc",
+  
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "PoA",
+    "ID": 4
+  },
+  "NFT_NAME": "Rocket Elevators",
+  "SYMBOL": "RE",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
+  "GAS_LIMIT": 3000000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/rocketelevator-v2",
+  "SHOW_BACKGROUND": true
+}
