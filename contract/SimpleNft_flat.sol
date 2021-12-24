@@ -1245,8 +1245,8 @@ contract RocketElevator is ERC721Enumerable, Ownable {
   uint256 public salesStartDates = 1640368800;
   uint256 public salesEndDates = 1641218400;
   uint256 public rocketTokenPrice = 100000;
-  address[] public whiteList = [0xe7D0ebe4C9874F06117d9f859B3d8792C25C441d,0x0dd1dC29DaC49A365afF1263Cb5EF9F4813753c2,0x51D25885F9c4D80a1A27dF41aCA3AbA48C74a4cb,0x987a44e4447Ab3fE177335ffBFD245562402139a, 0x49C99dB83eA1cDa354b718A4Be90f4B1C3Dc94A4,0xd1679bB3543e8aD195FF9f3Ac3436039bA389237];
-  address public rocketTokenAddress = 0x3b8F02Aa259f1c55fC2afaFF9cC3695074Ff80EB; //vrais rocket token
+  address[] public whiteList = [0xe7D0ebe4C9874F06117d9f859B3d8792C25C441d,0x987a44e4447Ab3fE177335ffBFD245562402139a, 0x49C99dB83eA1cDa354b718A4Be90f4B1C3Dc94A4,0xd1679bB3543e8aD195FF9f3Ac3436039bA389237];
+  address public rocketTokenAddress = 0x3C725E4f4448078de496a5Bf84eFE78C66b96d70;
   bool public paused = true;
   bool public revealed = false;
   string public notRevealedUri;
